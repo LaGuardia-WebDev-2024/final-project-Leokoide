@@ -1,9 +1,11 @@
 /* Styling Only Related To ALL Pages */
 
 body {
+  background-color: skyblue;
   padding-top: 30px;
   margin-left: 0px;
   margin-right: 0px;
+  font-family: "Oswald", sans-serif;
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
@@ -40,6 +42,56 @@ ul.nav .active {
   background-color: red;
 }
 
+/* === Header === */
 h1 {
   width: 100%;
 }
+
+ul.nav .active {
+  background-color: red;
+}
+
+h1 {
+  width: 100%;
+  padding: 20px;
+}
+p{
+  font-size: 20px;
+  padding: 20px;
+}
+.logo{
+  border-radius: 100px;
+}
+.contact {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.video-container {
+  padding: 30px;
+}
+.brand {
+  padding: 30px;
+}
+.brand h1 {
+    margin: 0;
+   padding: 0;
+}
+
+.brand p {
+    margin: 0;
+   padding: 0;
+}
+.contact h1 {
+  font-size: 100px;
+  margin: 0;
+   padding: 0;
+}
+
+.contact p {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
