@@ -1,66 +1,70 @@
+<!-- Final Project
+Requirements
+[ x ] Customized HTML Page #1
+[ x ] Customized HTML Page #2 
+[ x ] Customized HTML Page #3
+[ x ] Customized HTML Page #4
+
+Select ONE Additional Feature to Add  
+[ x ] Feature 1 - Google Font
+[ x ] Feature 3 - Include jQuery
+-->
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Final Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <style>
-      /* Styling Only Related To THIS Page */
-      .parent-flex {
-        display: flex;
-        background-color: purple;
-        justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .video-container {
+      display: none;
+      margin-top: 30px;
+    }
+    iframe {
+      max-width: 100%;
+      border: none;
+    }
+  </style>
 
-      .parent-flex img {
-        max-width: 30%;
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+  <script>
+    $(document).ready(function () {
+      $('.video-container').fadeIn(1500);
+    });
+  </script>
+</head>
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
-    </div>
+<body>
+  <ul class="nav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="art.html">Brand</a></li>
+    <li><a href="resume.html">Contact</a></li>
+    <li style="float: right">
+      <a target="_blank" href="https://www.tiktok.com/@morph.ny"
+        ><img src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" style="width: 25px; margin: -5px"
+      /></a>
+    </li>
+  </ul>
+<div class="brand">
 
-    <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
-    </div>
-  </body>
+  <h1>Brand Drop</h1>
+<p>
+Shot this promo with my friends for a brand I started called Morph. 
+  It’s on pause for now while I finish school, but I’m planning to pick it back up after I graduate.
+  Got a bunch of ideas still cooking!
+</p>
+  <div class="video-container">
+    <iframe
+      src="https://www.tiktok.com/embed/7358123440072674602"
+      width="325"
+      height="578"
+      allowfullscreen
+      allow="autoplay; encrypted-media"
+    ></iframe>
+      </div>
+  </div>
+</body>
 </html>
